@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_string_unes",
+  "info": {
+    "displayName": "une",
+    "icon": "cloud"
+  },
+  "options": {},
+  "attributes": {
+    "UneText": {
+      "type": "string"
+    }
+  }
+}

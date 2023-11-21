@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "membres",
+  "info": {
+    "singularName": "membre",
+    "pluralName": "membres",
+    "displayName": "Membre"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "estAdmin": {
+      "type": "boolean"
+    },
+    "email": {
+      "type": "email"
+    },
+    "mdp": {
+      "type": "password"
+    }
+  }
+}
