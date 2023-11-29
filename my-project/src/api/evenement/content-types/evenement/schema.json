@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "evenements",
+  "info": {
+    "singularName": "evenement",
+    "pluralName": "evenements",
+    "displayName": "Evenement",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "heure": {
+      "type": "time",
+      "required": true
+    },
+    "descriptionFR": {
+      "type": "text"
+    },
+    "descriptionIT": {
+      "type": "text"
+    },
+    "nbPlace": {
+      "type": "integer",
+      "min": 1
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "presentateur": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::membre.membre",
+      "inversedBy": "evenements"
+    },
+    "lieu": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::lieu.lieu",
+      "inversedBy": "evenements"
+    }
+  }
+}
